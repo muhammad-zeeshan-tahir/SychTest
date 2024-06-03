@@ -1,4 +1,4 @@
-# SYch FastAPI Prediction Server with Redis and Swagger
+# Sych FastAPI Prediction Server with Redis and Swagger
 
 This project is a simple web application server built with FastAPI to simulate machine learning model predictions. It supports both synchronous and asynchronous prediction processing using Redis for in-memory storage. Additionally, it includes Swagger documentation for the API.
 
