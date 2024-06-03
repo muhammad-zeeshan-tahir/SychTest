@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  web:
+    container_name: SychWeb
+    build: .
+    ports:
+      - "8080:8080"
+    depends_on:
+      - redis
+    environment:
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+
+  redis:
+    container_name: SychRedis
+    image: "redis:latest"
+    ports:
+      - "6379:6379"
